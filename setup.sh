@@ -18,7 +18,7 @@ trap _catch ERR
 cd "$(dirname "$0")"
 
 echo Installing dependencies
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 # Install as service
 echo Installing service
