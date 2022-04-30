@@ -1,0 +1,13 @@
+[Unit]
+Description=Service to connect to the EEW network and run the PLUM detection algorithm
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=bash <location>/start.sh
+
+[Install]
+WantedBy=multi-user.target
