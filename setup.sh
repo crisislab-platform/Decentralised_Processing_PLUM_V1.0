@@ -28,4 +28,6 @@ systemctl daemon-reload
 systemctl enable plum-client.service
 systemctl start plum-client.service
 
+(crontab -l ; echo "0 0 * ? * * * cd $(dirname "$0"); git pull") | crontab -
+
 echo Done\! Your sensor is now running the PLUM client.
